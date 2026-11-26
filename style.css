@@ -39,7 +39,8 @@ h1 { margin-bottom: 24px; font-size: clamp(58px, 6.6vw, 96px); font-weight: 500;
 h1 em, h2 em { font-family: var(--serif); font-weight: 400; letter-spacing: -.07em; }
 .hero-text { max-width: 350px; margin-bottom: 30px; color: #62615a; font-size: 15px; line-height: 1.75; }
 .button { min-height: 52px; display: inline-flex; align-items: center; justify-content: center; gap: 29px; padding: 0 21px; font-size: 12px; font-weight: 600; transition: background .2s ease, color .2s ease, transform .2s ease; }
-.button span, .text-link span { font-size: 17px; line-height: 1; }
+.arrow { position: relative; display: inline-block; width: 15px; height: 1px; background: currentColor; flex: 0 0 15px; }
+.arrow::after { content: ""; position: absolute; top: -3px; right: 1px; width: 6px; height: 6px; border-top: 1px solid currentColor; border-right: 1px solid currentColor; transform: rotate(45deg); }
 .button:hover { transform: translateY(-2px); }
 .button-dark { background: var(--ink); color: #fff; }
 .button-dark:hover { background: var(--rust); }
@@ -100,7 +101,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; letter-spacing: -.07
 .footer-brand .brand-mark { border-color: #77766f; }
 .footer-location { color: #aaa9a1; font-size: 10px; }
 .footer-whatsapp { font-size: 11px; transition: color .2s ease; }
-.footer-whatsapp span { margin-left: 8px; color: #df997d; }
+.footer-whatsapp .arrow { margin-left: 8px; color: #df997d; }
 .mobile-whatsapp { display: none; }
 
 a:focus-visible { outline: 2px solid var(--rust); outline-offset: 4px; }

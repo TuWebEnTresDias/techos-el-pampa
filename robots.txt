@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://techoselpampa.com/sitemap.xml
